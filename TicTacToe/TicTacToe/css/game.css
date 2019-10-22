@@ -1,0 +1,257 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+#shell {
+    width: 950px;
+    margin: 0 auto;
+}
+
+#gameMsgBox {
+    cursor: pointer;
+    display: none;
+    width: 500px;
+    height: 340px;
+    position: absolute;
+    text-align: center;
+    margin: 140px 0 0 230px;
+    z-index: 100;
+    background-color: rgba(232, 236, 242, .95);
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px -4px rgba(0,0,0,0.55);
+}
+
+#gameMsgBox #gameMsg {
+    cursor: pointer;
+    margin: 4% auto;
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+}
+
+table {
+    width: 620px;
+    margin: 0 auto;
+    box-shadow: 5px 4px 15px -2px rgba(0,0,0,.45);
+    border-radius: 10px;
+    float: left;
+    background-color: #05576b;
+}
+
+td {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-width: 4px;
+    border-style: groove;
+    border-color: #e5e6e8;
+}
+
+table tr:nth-child(-n+3) td:nth-child(-n+3) {
+    background-color: #d7f3f7;
+}
+
+table tr:nth-child(-n+3) td:nth-child(-n+3):hover {
+    background-color: #e5fbff;
+}
+
+table tr:nth-child(1) td:nth-child(1) {
+    border-radius: 10px 0px 0px 0px;
+}
+
+table tr:nth-child(1) td:nth-child(3) {
+    border-radius: 0px 10px 0px 0px;
+}
+
+table tr:nth-child(3) td:nth-child(3) {
+    border-radius: 0px 0px 10px 0px;
+}
+
+table tr:nth-child(3) td:nth-child(1) {
+    border-radius: 0px 0px 0px 10px;
+}
+
+.photo-container {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+.O {
+    transition: transform .3s;
+    opacity: 1;
+    background-image: url("../images/avatarO.gif");
+    width: 200px;
+    height: 200px;
+    transform: translateY(-100%);
+}
+
+.X {
+    transition: transform .3s;
+    opacity: 1;
+    background-image: url("../images/avatarX.gif");
+    width: 200px;
+    height: 200px;
+    transform: translateY(100%);
+}
+
+.console_Left {
+    width: 160px;
+    height: 600px;
+    margin: 0px 0px 0px 10px;
+    float: left;
+}
+
+.console_Right {
+    width: 140px;
+    height: 600px;
+    margin: 0px auto;
+    float: left;
+}
+
+.displayBox {
+    background-color: rgba(142, 117, 35, 0.95);
+    color: white;
+    font-weight: bold;
+    border: 3px solid black;
+    padding: 2%;
+    box-shadow: 5px 5px 25px -4px rgba(0,0,0,0.65);
+    border-radius: 10px;
+}
+.displayBox:hover {
+    background-color: rgba(142, 92, 35, 0.88);
+}
+
+.boxLeft {
+    float: left;
+    margin: 0px 0px 0px 20px;
+    width: 120px;
+    height: 120px;
+}
+
+.boxRight {
+    float: right;
+    margin: 0px 10px 0px 0px;
+    width: 110px;
+    height: 120px;
+}
+
+.boxRight>button {
+    cursor: pointer;
+    margin: 10px 0px 10px 10px;
+    width: 90px;
+    height: 25px;
+    background-color: rgba(214, 212, 212, .95);
+    border: 1px solid rgba(0,0,0,0.65);
+    border-radius: 10px;
+}
+
+.boxRight>button:hover {
+    background-color: rgba(237, 234, 234, .95);
+    border: 1px solid rgba(0,0,0,.85);
+    box-shadow: 3px 3px 15px -4px rgba(0,0,0,.65);
+    border-radius: 10px;
+}
+
+#controls {
+    width: 200px;
+    float: center;
+    margin: 0 auto;
+}
+
+#showHeader {
+    font-variant: small-caps;
+    color: white;
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 0px 2px 0px;
+    margin: 0px 0px 0px 0px;
+    background-color: #212270;
+    border: 2px solid black;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#showPlayer {
+    font-variant: small-caps;
+    color: rgb(255, 196, 0);
+    font-weight: bold;
+    width: 120px;
+    height: 20px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 5px 0px 5px 0px;
+    border: 2px solid black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#messageFrame {
+    width: 124px;
+    height: 82px;
+    text-align: center;
+    margin: 358px 0px 0px 20px;
+    box-shadow: 5px 5px 25px -4px rgba(0,0,0,0.65);
+    border-radius: 10px;
+}
+
+#boardState {
+    display: none;
+    font-size: 10px;
+    margin: 10px auto;
+    float: left;
+}
+
+#btnStart {
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border: 2px solid rgb(54, 0, 153);
+    background-color: rgb(100, 0, 230);
+    margin: 20px 0px 0px 25px;
+    padding: 12px 14px 12px 14px;
+    box-shadow: inset 3px 3px 15px -2px rgba(255, 255, 255, 0.95), 3px 3px 15px -4px rgba(0,0,0,.85);
+    border-radius: 10px;
+}
+
+#btnStart:hover {
+    border: 2px solid rgb(0, 55, 77);
+    background-color: rgb(0, 122, 204);
+    box-shadow: inset 3px 3px 15px -2px rgba(0,0,0,0.65);
+    transition-property: background box-shadow;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+#btnStop {
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border: 2px solid rgb(204, 0, 0);
+    background-color: rgb(255, 52, 52);
+    margin: 20px 0px 0px 10px;
+    padding: 12px 14px 12px 14px;
+    box-shadow: inset 3px 3px 15px -2px rgba(255, 255, 255, 0.95), 3px 3px 15px -4px rgba(0,0,0,.85);
+    border-radius: 10px;
+}
+
+#btnStop:hover {
+    border: 2px solid rgb(19, 77, 0);
+    background-color: rgb(255, 0, 0);
+    box-shadow: inset 3px 3px 15px -2px rgba(0, 0, 0, 0.65);
+    transition-property: background box-shadow;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
