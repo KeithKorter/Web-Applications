@@ -1,2 +1,2 @@
 # Web-Applications
-Simple modules for use on web sites
+Modules for use on web sites
