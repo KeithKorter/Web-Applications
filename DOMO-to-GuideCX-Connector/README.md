@@ -12,8 +12,10 @@ Use Domo's GuideCX connector to pull data about projects, in your account. Get v
 Projects – List of all projects
 Project Notes – Notes associated with each project
 Project Tags – Tags associated with each project
+Project Custom Fields - All custom fields applied to a project
 Tasks – All tasks for each project
 Task Notes – All notes for each task in projects
+
 
 
 --FAQ--
