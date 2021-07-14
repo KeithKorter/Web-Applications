@@ -7,7 +7,7 @@ To get at the full scope of project status, you need context. Domo's cloud-based
 
 Use Domo's GuideCX connector to pull data about projects, in your account. Get visualizations and reports on your projects made to your exact specifications-what you want to see, how you want to see it.
 
-<h2>--Description of each report--<h2/>
+<h2>--Description of each report--</h2>
 
 Projects – List of all projects <br />
 Project Notes – Notes associated with each project <br />
