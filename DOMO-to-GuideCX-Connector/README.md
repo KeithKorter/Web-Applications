@@ -18,7 +18,7 @@ Task Notes – All notes for each task in projects<br />
 
 
 
-<h2>--FAQ--<h2/>
+<h2>--FAQ--</h2>
 
 1.	What kind of data can I get from the GuideCX Connector?
 •	Project Data from any active or completed project in GuideCX
